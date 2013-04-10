@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(void)
+{
+  int num;
+	num=1;
+
+	printf ("我的名字叫做");
+	printf ("小狼.\n");
+	printf ("我的愿望是跨考计算机研究生成功，一定要成功！.\n",num);
+	getchar();
+	return 0;
+}

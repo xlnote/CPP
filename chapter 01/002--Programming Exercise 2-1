@@ -1,0 +1,37 @@
+//chapter2--2.1
+#include <stdio.h>
+int main(void)
+{
+	printf("Anton Bruckner\n");
+	printf("Anton\n");
+	printf("Bruckner\n");
+	printf("Anton ");
+	printf("Bruckner\n");
+	getchar();
+	return 0;
+}
+
+有几处需要改进的地方：
+
+1.最开始的时候把stdio.h拼错成了studio.h，结果直接导致五处编译错误——stdio.h，标准输入输出头文件，standard in/output。
+2.return 0 中间有一个空格别忘了。
+3.头文件最好空行分隔开 预处理指令部分 和 带有参数的函数名部分
+4.函数调用语句部分 和 Return语句最好也空行表示
+5.题意要求的是第二三行只用第二个输出语句来表示
+
+修改后如下--
+
+/* Programming Exercise 2-1  */
+
+#include <stdio.h>
+
+int main (void)
+{
+	printf("Anton Bruckner\n");
+	printf("Anton\nBruckner\n");
+	printf("Anton ");
+	printf("Bruckner\n");
+
+	getchar();
+	return 0;
+}

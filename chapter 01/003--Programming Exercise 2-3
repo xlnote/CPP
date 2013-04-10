@@ -1,0 +1,17 @@
+/*Programming Exercise 2-3*/
+#include <stdio.h>
+
+int main (void)
+{
+  int years,days;
+
+	years = 25;
+	days = 365*years;
+	printf("我的年龄是%d,已经来到这个世界%d天了.\n",years,days);
+
+	getchar ();
+	return 0;
+}
+
+复制部分没有必要和printf语句隔行。
+声明变量 ageryears，agedays更合适

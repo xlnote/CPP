@@ -1,0 +1,52 @@
+/*除了main（）函数之外调用两个用户定义的函数，把四句话让这两个函数分别输出*/
+#include <stdio.h>
+
+void kuajiang (void);
+void last (void);
+int main (void)
+{
+	kuajiang();
+	last();
+
+	getchar ();
+	return 0;
+}
+
+void kuajiang (void)
+{
+	printf ("For he's a jolly good fellow!\nFor he's a jolly good fellow!\nFor he's a jolly good fellow!\n");
+}
+
+void last (void)
+{
+	printf("Which noboday can deny!\n");
+}
+
+错误是没有，但还是有个地方可以改进的：
+1.声明部分根据题意，jolly和deny貌似更好
+2.宁愿把一个语句函数重复调用三次，也不要一次性把三个重复句子都写出来，显得很俗~
+
+#include <stdio.h>
+
+void jolly(void);
+void deny(void);
+
+int main(void)
+{
+    jolly();
+    jolly();
+    jolly();
+    deny();
+
+    return 0;
+}
+
+void jolly(void)
+{
+    printf("For he's a jolly good fellow!\n");
+}
+
+void deny(void)
+{
+    printf("Which nobody can deny!\n");
+}

@@ -1,0 +1,32 @@
+/*
+关键字：多个函数、函数之间的调用
+描述：
+  main()显示"starting now:",调用one_three(),显示done!;
+  one_three()显示one,调用two(),显示three;
+  two()显示two;
+*/
+#include <stdio.h>
+
+void one_three (void);
+void two (void);
+int main (void)
+{
+  printf("starting now:\n");
+  one_three();
+  printf("done!");
+
+  getchar();
+  return 0;
+}
+
+void one_three (void)
+{
+  printf("one\n");
+  two ();
+  printf("three\n");  
+}
+
+void two (void)
+{
+  printf("two\n");
+}

@@ -1,0 +1,22 @@
+/*
+关键字：
+题目描述：声明整型变量toes，赋值10，计算2倍和2次方，并分别标识
+Programming Exercise 2-5
+*/
+#include <stdio.h>
+
+int main (void)
+{
+  int toes;
+
+  toes = 10;
+
+  printf("toes = %d\n",toes);
+	printf("two toes = %d\n",2*toes);
+	printf("toes squared = %d\n",toes*toes);
+
+	getchar ();
+	return 0;
+}
+
+不小心把()拼成了（），导致老一会没有找到错误！真不该犯这样的错误
